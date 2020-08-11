@@ -1,0 +1,79 @@
+COMANDOS LINUX:
+
+pwd - diretorio onde estou
+cp - copia arquivo
+mv - renomeia arquivo
+
+rm - apaga arquivo ou diretorio
+
+rm -r apaga recursivamente
+
+
+cat - le conteudo de um arquivo
+head - lê as 10 primeiras linhas do aruivo
+head -n numero das primeias linhas
+tail - lê a partir das ultimas linhas do arquivo
+less - navega pelo corpo do arquivo, q para saida
+
+zip arquivo.zip arquivo
+zip -r diretorio.zip diretorio
+
+unzip - descompacta arquivo zip
+
+unzip -q descompacta arquivo de forma "silenciosa"
+
+compacta:
+
+tar -cz diretorio > diretorio.tar.gz : necessita direcionar
+tar -czf diretorio.tar.gz diretorio/ : sem necessidade de direcionar
+
+descompacta:
+
+tar -xzf diretorio.tar.gz
+tar -vxzf diretorio.tar.gz : verbose
+
+para formato bzip2 - mais eficiente na comactação
+
+tar -cjf diretorio.tar.bz2 diretorio
+
+touch - modifica data de alteração de um arquivo sem mudar o arquivo
+
+date - formata saida de data = "+%d/%m/%Y" = 17/07/19
+date : "+%d de %B de %Y" 17 de Mês de 2019
+
+
+----------------------------- VI ---------------------------
+Abrir arquivo vi arquivo.
+Navegação pelas setas do teclado
+i - modo de edição cliando na tecla 
+a - insere apos cursor
+ESC - voltar a navegação 
+:w - Salvar alterações 
+:q - sair do VI
+:q! - sair sem salvar
+:wq - salva e sai
+x - apaga caracter por caracter na linha
+n + x - apaga o numero de caracteres informado
+SHIFT+A - adiciona ao final da linha
+
+
+----------------------------- VI ---------------------------
+
+VI - Navegação no arquivo
+
+Shift + g - vai para ultima linha
+numero + Shift + g
+g minusculo
+
+$ vai par ao final da linha atual
+0 inicio da linha
+/ palavra -  para buscar palavras
+n - vai para a proxima instancia da palavra
+Shift + n - volta para a palavra anterior
+
+copiar e colar
+yy copia linha
+p cola conteudo copiado
+
+numero + yy - copia o numero de linhas
+numero + p cola numero de vezes o conteudo

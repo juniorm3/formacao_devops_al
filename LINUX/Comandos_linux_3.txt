@@ -1,0 +1,31 @@
+adduser + nome: adiciona novo usuario no SO
+chmod o-rx usuario: retira permissões de leitura e execução para outros usuarios
+chmod u-rx usuario: retira permissões de leitura e execução do propio usuarios
+chmod g-rx usuario: retira permissões de leitura e execução do grupo
+
+
+env: exibe as variaveis de ambiente
+env | grep PATH: exibe a variavel de ambiente PATH
+PATH=$PATH:"caminho" inclui caminho na variavel de ambinente PATH na sessão do console
+gedit .bashrc &: editar arquivo para colocar a variavel PATH na inicialização do console
+
+wc -w *.txt: conta o numero de palavras em todos os arquivos com extenção txt no diretorio atual (-w total de palavras em um arquivo)
+wc -w *.txt | grep total: total de palavras em todos os arquivos
+opção -c para caracteres e -l para linhas.
+
+apt-get install: instala um programa dado o nome
+apt-get remove: desinstala um programa dado o nome
+apt-get update: busca uma lista das versões atualizadas dos programas
+apt-cache search: procura os programas disponíveis para instalação
+
+sudo dpkg -i programa .deb : instala um programa
+sudo apt-get -f install : baixa dependencias do programa
+sudo dpkg -r : remove programa
+
+sudo service vsftpd stop: para um serviço inicializado com o SO
+sudo service vsftpd start: inicializa o serviços por um script
+sudo service vsftpd status: verifica se o serviço esta em execução
+ps -e | grep vsftpd 		""			""			""			""
+
+ssh: conexão remota
+scp -r: copia arquivos para o diretorio remoto de forma recursiva

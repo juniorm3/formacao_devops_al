@@ -1,0 +1,40 @@
+LINUX II
+
+comandos:
+
+ps - lista todos os processos rodando no bash
+ps -e lista todos os processo rodando no sistema
+kill + ID = encerra processo em execução
+kill -9 força a finalização do processo
+ps -ef : mostra mais detalhes dos processos em execução
+ps -ef | grep nome processo: lista apenas processos com o nome listado
+grep "Palavra" arquivo : procura palavra ou termo em um arquivo
+
+cat arquivo | grep "Texto" - Obtem apenas linhas que contenham o texto indicado
+
+top: mostar os processo abertos e o consumo dos recursos do computator
+top -p numeropid : mostra dados do processo expecifico
+top -u usuario: processos abertos pelo usuario
+d: altera o valor de tempo de atualização na tela
+
+kill -9 numeroid : mata processo pelo id
+
+killall top
+killall -9 top
+
+pstree: lista processo em arvore
+jobs: lista processo utilizados no terminal
+CTRL + Z: destrava o terminal
+bg: coloca o processo em background, deixando o bash destravado
+bg + n
+fg: coloca em foreground
+CTRL + C: encerra execução
+
+programa + &:  abre program em backound
+
+locate + programa: localizar um programa no SO
+sudo updatedb: atualiza o banco de dados de progrmas (roda sozinho de tempos em tempos)
+which: identifica qual versão de um  programa será executada
+passwd: troca senha usuario
+sudo passwd: troca senha do usuario root
+su usuario: loga com outro usuário dentro de uma sessão do terminal
