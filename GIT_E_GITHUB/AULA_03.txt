@@ -1,0 +1,30 @@
+Compartilhando o trabalho
+
+- Servidor Git
+git init --bare: Com este comando nós criamos um repositório que não terá a working tree, ou seja, não conterá uma cópia dos nossos arquivos. 
+Como o repositório servirá apenas como servidor, para que outros membros da equipe sincronizem seus trabalhos, poupamos espaço de armazenamento
+ desta forma.
+
+ - Trabalhando com repositórios remotos
+ git remote add nome-repositorio caminho/para/o/repositorio:
+ Desta forma teremos um link do nosso repositório local com o repositório remoto, que chamamos de nome-repositorio, que está armazenado em 
+ caminho/para/o/repositorio.
+
+ - Compartilhamos as alterações
+git push [repositorio] master
+
+Desta forma, nós enviamos as alterações em nosso branch master (falaremos mais sobre branches já já) para o repositório 
+remoto. Basta substituir [repositorio] pelo nome que demos ao repositório ao adicioná-lo. Já para trazer os dados que estiverem no repositório 
+remoto, podemos utilizar o git pull [repositorio] master.
+
+Nesta aula, aprendemos:
+
+O que são repositórios remotos;
+Como criar um repositório Git sem uma cópia dos arquivos (com --bare) para ser utilizado como servidor;
+Como adicionar links para os repositórios remotos, com o comando git remote add;
+Como baixar um repositório pela primeira vez, clonando-o com o comando git clone;
+Como enviar as nossas alterações para um repositório remoto, com git push;
+Como atualizar o nosso repositório com os dados no repositório remoto, utilizando git pull;
+O que é e para que serve o GitHub;
+Como criar um repositório no GitHub;
+Como adicionar um repositório do GitHub como repositório remoto.
